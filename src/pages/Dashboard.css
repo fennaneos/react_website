@@ -1,0 +1,16 @@
+.dashboard-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  canvas {
+    display: block;
+  }
+  
+  /* Optional: add z-index to make sure panels sit above canvas */
+  .side-panel {
+    z-index: 10;
+  }
+  

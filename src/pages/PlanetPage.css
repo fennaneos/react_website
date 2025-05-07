@@ -1,0 +1,25 @@
+.planet-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #0d1117;
+    color: white;
+  }
+  
+  .planet-panel {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    border-radius: 1rem;
+    border: 2px solid currentColor;
+    text-align: center;
+  }
+  
+  .planet-earth .planet-panel {
+    color: #00f6ff;
+  }
+  
+  .planet-mars .planet-panel {
+    color: #ff5e5e;
+  }
+  

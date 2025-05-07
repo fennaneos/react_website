@@ -1,0 +1,51 @@
+/* src/components/InfoPanel.css */
+.info-panel {
+    background-color: rgba(10, 10, 15, 0.95);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 16px;
+    border-radius: 12px;
+    width: 220px;
+    font-family: 'Segoe UI', sans-serif;
+    backdrop-filter: blur(10px);
+    position: absolute;
+    z-index: 100;
+    animation: fadeIn 0.3s ease-in-out;
+  }
+  
+  .info-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .close-button {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 1.2em;
+    cursor: pointer;
+  }
+  
+  .info-link {
+    margin-top: 8px;
+    cursor: pointer;
+    text-decoration: underline;
+    color: #aaa;
+  }
+  
+  .info-link:hover {
+    color: white;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-5px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
