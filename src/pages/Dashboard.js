@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { Canvas } from '@react-three/fiber';
 import GalaxyScene from '../components/GalaxyScene';
 import SidePanel from '../components/SidePanel';
@@ -6,10 +7,6 @@ import useAmbientSound from '../components/useAmbientSound';
 import ambientSoundFile from '../assets/sounds/space-ambient.mp3';
 import './Dashboard.css';
 
-const leftPanelItems = [
-  { label: 'Overview', onClick: () => console.log('Overview clicked') },
-  { label: 'Navigation', onClick: () => console.log('Navigation clicked') },
-];
 
 const rightPanelItems = [
   { label: 'Settings', onClick: () => console.log('Settings clicked') },
@@ -28,6 +25,18 @@ export default function Dashboard() {
 
     return () => clearTimeout(timer);
   }, [play]);
+
+  const navigate = useNavigate(); // Needed to navigate programmatically
+  const leftPanelItems = [
+    {
+      label: 'Redis Guide',
+      onClick: () => navigate('/redis')  // Navigates to Redis Guide page
+    },
+    {
+      label: 'Navigation',
+      onClick: () => console.log('Navigation clicked')
+    }
+  ];
 
   return (
     <div className="dashboard-container">

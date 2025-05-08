@@ -1,0 +1,45 @@
+.redis-guide {
+    padding: 40px;
+    color: #8ef;
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    font-family: 'Orbitron', sans-serif;
+    min-height: 100vh;
+  }
+  
+  .redis-guide h1, .redis-guide h2 {
+    color: #00f6ff;
+    text-shadow: 0 0 4px #00f6ff88;
+  }
+  
+  .redis-guide pre {
+    background-color: #0d1117;
+    color: #8ef;
+    padding: 10px;
+    border-radius: 6px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    box-shadow: 0 0 8px #00f6ff22;
+  }
+  
+  .redis-guide a {
+    color: #0ff;
+    text-decoration: underline;
+    overflow-x: hidden;
+  overflow-y: auto;
+  }
+  
+  .redis-guide-container {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    overflow-y: auto;
+    padding: 40px;
+    box-sizing: border-box;
+  }
+  
+  body, html, #root {
+    height: 100%;
+    overflow-y: auto;
+  }
+  

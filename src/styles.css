@@ -31,13 +31,23 @@ body, html {
     color: #ffffff;
   }
   
-  body, html, #root {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    background-color: black;
-    overflow: hidden;
-  }
+/* Ensure global container scrolls when content is tall */
+html, body, #root {
+  height: 100%;
+  overflow: auto;
+  margin: 0;
+  padding: 0;
+}
+
+/* New wrapper class */
+.app-container {
+  position: relative;
+  min-height: 100vh;
+  height: auto;
+  overflow-y: auto;
+  padding-bottom: 50px;
+}
+
   
   .canvas-container {
     position: absolute;
